@@ -30,10 +30,10 @@ Of course, there is a trivial workaround:
 
 x={ "id":12, "name":"John Doe", "birthdate":"12-JAN-2001", "orders": "_arrayList_12232_8989_" }
 
-_arrayList_12232_8989_=[ {"id":343, "date":"1-JAN-2015"}, {"id":675, "date":"2-MAR-2016"}]
+\_arrayList\_12232_8989\_=[ {"id":343, "date":"1-JAN-2015"}, {"id":675, "date":"2-MAR-2016"}]
 
 
-By looking at the key "orders", we can see that it possibly refers to an arraylist ("_arrayList_12232_8989_"). If this variable also really exists, then it is an embedded arrayList.
+By looking at the key "orders", we can see that it possibly refers to an arraylist ("\_arrayList\_12232\_8989\_"). If this variable also really exists, then it is an embedded arrayList.
 
 ## Current state of the project
 
