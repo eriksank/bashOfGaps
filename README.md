@@ -37,6 +37,12 @@ Of course, there is a trivial workaround:
 
 By looking at the key "orders", we can see that it possibly refers to an arraylist ("\_arrayList\_12232\_8989\_"). If this variable also really exists, then it is an embedded arrayList.
 
+## Classes in the project
+
+* `dataStructure` contain the functions common to both `arrayList` and `hashTable`
+* `arrayList` contains the arrayList functions
+* `hashTable` contains the hashTable functions
+
 ## Current state of the project
 
 Most functions have been implemented already, except for `clone`, `remove`(key) and `delete` (object).
