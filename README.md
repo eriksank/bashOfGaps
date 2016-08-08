@@ -1,23 +1,30 @@
-# bashOfGaps
-Bash extension for nested arrays and json parsing
+# bashOfGaps: Bash extension for nested arrays and json parsing
 
-Warning: Very incomplete documentation.
+_Warning: Very incomplete documentation._
+
+## Testing
 
 For the time being, you may run `test.sh` which will run all the existing unit tests.
 
-The project currently implements most of the functionality needed for a nestable arrayList and hashTable.
+## ArrayList and hashTable
 
-arrayList. Example: [ 1, "hello", 454, -4, "something" ]
+The project currently implements most of the functionality needed for a nestable `arrayList` and `hashTable`.
+
+*arrayList.* Example: [ 1, "hello", 454, -4, "something" ]
 
 An arrayList also often called a "vector".
 
-hashtable. Example: { "id":12, "name":"John Doe", "birthdate":"12-JAN-2001" }
+*hashtable.* Example: { "id":12, "name":"John Doe", "birthdate":"12-JAN-2001" }
 
 A hashtable is often also called a "map" or an "object" (in javascript) or an associative array (in php).
+
+## Why this project?
 
 Bash implements arrayLists and hashTables. However, you cannot nest them. For example, out of the box, this structure cannot be stored in Bash:
 
 x={ "id":12, "name":"John Doe", "birthdate":"12-JAN-2001", "orders":[ {"id":343, "date":"1-JAN-2015"}, {"id":675, "date":"2-MAR-2016"}] }
+
+## Automating the solution
 
 Of course, there is a trivial workaround:
 
@@ -28,9 +35,13 @@ _arrayList_12232_8989_=[ {"id":343, "date":"1-JAN-2015"}, {"id":675, "date":"2-M
 
 By looking at the key "orders", we can see that it possibly refers to an arraylist ("_arrayList_12232_8989_"). If this variable also really exists, then it is an embedded arrayList.
 
+## Current state of the project
+
 Most functions have been implemented already, except for `clone`, `remove`(key) and `delete`.
 
 The real purpose is to use it to parse json files and process them in bash.
+
+## Existing file structure
 
 The current structure of the files looks like this:
 
