@@ -10,11 +10,15 @@ For the time being, you may run `./test.sh` which will run all the existing unit
 
 The project currently implements most of the functionality needed for a nestable `arrayList` and `hashTable`.
 
-*arrayList.* Example: [ 1, "hello", 454, -4, "something" ]
+*arrayList example:*
+ 
+	[ 1, "hello", 454, -4, "something" ]
 
 An arrayList also often called a "vector".
 
-*hashtable.* Example: { "id":12, "name":"John Doe", "birthdate":"12-JAN-2001" }
+*hashtable example:*
+
+	{ "id":12, "name":"John Doe", "birthdate":"12-JAN-2001" }
 
 A hashtable is often also called a "map" or an "object" (in javascript) or an associative array (in php).
 
