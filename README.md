@@ -107,7 +107,6 @@ The current structure of the files looks like this:
 	│       ├── obliviousInput.sh
 	│       ├── regexEscape.sh
 	│       ├── required.sh
-	│       ├── shutUp.sh
 	│       ├── sortList.sh
 	│       └── trim.sh
 	├── test.sh
