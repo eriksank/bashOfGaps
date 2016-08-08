@@ -4,7 +4,7 @@ _Warning: Very incomplete documentation._
 
 ## Testing
 
-For the time being, you may run `test.sh` which will run all the existing unit tests.
+For the time being, you may run `./test.sh` which will run all the existing unit tests.
 
 ## ArrayList and hashTable
 
