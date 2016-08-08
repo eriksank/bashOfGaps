@@ -26,7 +26,7 @@ A hashtable is often also called a "map" or an "object" (in javascript) or an as
 
 Bash implements arrayLists and hashTables. However, you cannot nest them. For example, out of the box, this structure cannot be stored in Bash:
 
-	x={ "id":12, "name":"John Doe", "birthdate":"12-JAN-2001", 
+	x = { "id":12, "name":"John Doe", "birthdate":"12-JAN-2001", 
 		"orders":[ {"id":343, "date":"1-JAN-2015"}, {"id":675, "date":"2-MAR-2016"}] 
 	}
 
@@ -34,9 +34,9 @@ Bash implements arrayLists and hashTables. However, you cannot nest them. For ex
 
 Of course, there is a trivial workaround:
 
-	x={ "id":12, "name":"John Doe", "birthdate":"12-JAN-2001", "orders": "_arrayList_12232_8989_" }
+	x = { "id":12, "name":"John Doe", "birthdate":"12-JAN-2001", "orders": "_arrayList_12232_8989_" }
 
-	_arrayList_12232_8989_=[ {"id":343, "date":"1-JAN-2015"}, {"id":675, "date":"2-MAR-2016"}]
+	_arrayList_12232_8989_ = [ {"id":343, "date":"1-JAN-2015"}, {"id":675, "date":"2-MAR-2016"}]
 
 
 By looking at the key "orders", we can see that it possibly refers to an arraylist ("\_arrayList\_12232\_8989\_"). If this variable also really exists, then it is an embedded arrayList.
