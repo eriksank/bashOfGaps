@@ -2,11 +2,11 @@
 
 _Warning: Very incomplete documentation._
 
-## Testing
+## 1. Trying out
 
 For the time being, you may run `./test.sh` which will run all the existing unit tests.
 
-## ArrayList and hashTable
+## 2. ArrayList and hashTable
 
 The project currently implements most of the functionality needed for a nestable `arrayList` and `hashTable`.
 
@@ -18,7 +18,7 @@ An arrayList also often called a "vector".
 
 A hashtable is often also called a "map" or an "object" (in javascript) or an associative array (in php).
 
-## Why this project?
+## 3. Why this project?
 
 Bash implements arrayLists and hashTables. However, you cannot nest them. For example, out of the box, this structure cannot be stored in Bash:
 
@@ -26,7 +26,7 @@ Bash implements arrayLists and hashTables. However, you cannot nest them. For ex
 		"orders":[ {"id":343, "date":"1-JAN-2015"}, {"id":675, "date":"2-MAR-2016"}] 
 	}
 
-## Automating the solution
+## 4. Automating the solution
 
 Of course, there is a trivial workaround:
 
@@ -37,19 +37,20 @@ Of course, there is a trivial workaround:
 
 By looking at the key "orders", we can see that it possibly refers to an arraylist ("\_arrayList\_12232\_8989\_"). If this variable also really exists, then it is an embedded arrayList.
 
-## Classes in the project
+## 5. Classes in the project
 
 * `dataStructure` contain the functions common to both `arrayList` and `hashTable`
 * `arrayList` contains the arrayList functions
 * `hashTable` contains the hashTable functions
+* `util` contains a few utility functions
 
-## Current state of the project
+## 6. Current state of the project
 
 Most functions have been implemented already, except for `clone`, `remove`(key) and `delete` (object).
 
 The purpose is to use it to parse json files and be able to process them in bash.
 
-## Existing file structure
+## 7. Existing file structure
 
 The current structure of the files looks like this:
 
