@@ -37,9 +37,9 @@ By looking at the key "orders", we can see that it possibly refers to an arrayli
 
 ## Current state of the project
 
-Most functions have been implemented already, except for `clone`, `remove`(key) and `delete`.
+Most functions have been implemented already, except for `clone`, `remove`(key) and `delete` (object).
 
-The real purpose is to use it to parse json files and process them in bash.
+The purpose is to use it to parse json files and be able to process them in bash.
 
 ## Existing file structure
 
